@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+body{/*селектор тегу body*/
+   background-color: mintcream;
+   color: rgb(19, 18, 18);
+
+   font-size: 16px;
+   font-weight: normal;
+   font-family: 'Montserrat', sans-serif;
+}
+
+a{
+   color: rgb(183, 243, 238);
+   font-size: 20px;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+img{
+   background-color: rgb(183, 243, 238);
+   border-radius: 50%;
+}
+
+ul{
+   list-style-type: square;
+}
+
+ul li a {
+   color: rgb(3, 2, 75);
+}
