@@ -1,0 +1,244 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap');
+
+
+body{
+    background-color: #ededed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteiner{
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.22);
+    height: auto;
+    padding: 1rem 2rem;
+    max-width: 650px;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+h1,
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a.arrow{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+}
+
+a.arrow::after{
+    content: ">";
+    position: absolute;
+    bottom: 0;
+    margin: 0 7px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition-duration: 0.1s;
+    transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+}
+
+a.arrow:hover::after,
+a.arrow:focus::after,
+a.arrow:active::after{
+    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+}
+
+a.hexagon{
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    padding-right: 3.5rem;
+    position: relative;
+    text-decoration: none;
+}
+
+a.hexagon::after{
+    background: url("http://www.candicendexter.com/images/long-arrow-alt-right-solid.svg") center center no-repeat;
+    content: "";
+    width: 23px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1.3rem;
+    padding: 0;
+    margin: auto;
+    line-height: 19px;
+}
+
+
+a.hexagon::before{
+    background: url("http://www.candicendexter.com/images/hexagon.svg") top center no-repeat;
+    content: "";
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1rem;
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+a.hexagon:hover::before,
+a.hexagon:focus::before,
+a.hexagon:active::before{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a.print[href]::after{
+    color: #000 !important;
+    content: "("attr(href)")" !important;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+div{
+    margin-left: 5%;
+}
+
+a{
+    color: #2db24a;
+    display: block;
+    margin-top: 2%;
+}
+
+#link:link{
+    color: blue;
+}
+
+/*#visited:visited{
+    color: red;
+}*/
+
+p{
+    color: #2db34a;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#hover:hover{
+    font-weight: bold;
+}
+
+#active:active{
+    color: blue;
+}
+
+#focus:focus{
+    color: blue;
+}
+
+input{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+input:enabled{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+input:disabled{
+    font-size: 0.5rem;
+}
+
+input:checked{
+    height: 20px;
+    width: 20px;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+li:last-child{
+    color: blue;
+}
+
+a:only-child{
+    text-transform: uppercase;
+}
+
+article{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+div p:first-of-type{
+    font-weight: bold;
+}
+
+div span:only-child{
+    color: #000;
+}
+
+div p:last-of-type{
+    color: blue;
+}
+
+article span:only-of-type{
+    text-transform: uppercase;
+}
+
+.nth-child h4:nth-child(1n){
+    color: black;
+}
+
+.nth-child h4:nth-last-child(3n){
+    color: blue;
+}
+
+article p:nth-of-type(2n){
+    color: red;
+}
+
+article p:nth-last-of-type(2n){
+    color: black;
+}
+
+article p,
+article h4,
+article h3{
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+body h5:not(.bold){
+    font-weight: lighter;
+}
