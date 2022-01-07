@@ -1,0 +1,310 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background: rgb(252, 160, 55);
+}
+
+.main{
+   margin: 40px;
+   margin-top: 620px;
+}
+
+.body{
+   width: 100%;
+   height: 50px;
+   border: 1px solid #000;
+   border-radius: 30px;
+   position: relative;
+   z-index: 2;
+}
+
+.body,
+.ear,
+.face,
+.leg,
+.paw,
+.tail1{
+   background: rgb(253, 194, 65);
+}
+
+.eye,
+.nose{
+   background: #000;
+}
+
+.ear{
+   width: 12px;
+   height: 33px;
+   border-bottom: 1px solid #000;
+   border-radius: 0;
+   position: absolute;
+   margin-top: 2px;
+   margin-left: -5px;
+}
+
+.ear1{
+   border-left: 1px solid #000;
+   border-radius: 40%;
+}
+
+.ear2{
+   border-right: 1px solid #000;
+   border-radius: 40%;
+   margin-left: 43px;
+}
+
+.face{
+   width: 60px;
+   height: 60px;
+   border-top: 1px solid #000;
+   border-radius: 33px;
+   margin-top: -15px;
+   margin-left: -5px;
+}
+
+.eye{
+   width: 14px;
+   height: 14px;
+   border: 1px solid #000;
+   border-radius: 50%;
+   position: absolute;
+   margin-top: 20px;
+}
+
+.eye1{
+   margin-left: 13px;
+}
+
+.eye2{
+   margin-left: 33px;
+}
+
+.pupil{
+   background: #fff;
+   width: 11px;
+   height: 11px;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   margin-left: 2px;
+}
+
+.m1{
+   background-color: rgb(253, 194, 65);
+   width: 7px;
+   height: 13px;
+   border: 1px solid #000;
+   border-radius: 40%;
+   margin-top: 30px;
+}
+
+.m1_1{
+   margin-left: 20px;
+}
+
+.m1_2{
+   margin-top: -13px;
+   margin-left: 33px;
+}
+
+.m2{
+   position: absolute;
+   width: 19px;
+   height: 10px;
+   background-color: rgb(253, 194, 65);
+   border-top: 1px solid #000;
+   border-radius: 50%;
+   margin-top: -15px; 
+   margin-left: 20px;
+}
+
+.nose{
+   position: absolute;
+   width: 10px;
+   height: 7px;
+   border: 1px solid #000;
+   border-radius: 50%;
+   margin-top: -12px;
+   margin-left: 24.75px;
+}
+
+.leg{
+   height: 40px;
+   width: 10px;
+   border: 1px solid #000;
+   border-radius: 30px;
+   border-top: none;
+   border-top-left-radius: 0%;
+   border-top-right-radius: 0%;
+   position: absolute;
+}
+
+.leg1{
+   margin-left: 25px;
+   margin-top: -7px;
+}
+
+.leg2{
+   margin-left: 45px;
+   margin-top: -2px;
+}
+
+.leg3{
+   right: 80px;
+   margin-top: -7px;
+}
+
+.leg4{
+   right: 60px;
+   margin-top: -2px;
+}
+
+.leg1,
+.leg3{
+   z-index: 1;
+}
+
+.leg2,
+.leg4{
+   z-index: 3;
+}
+
+.paw{
+   width: 14px;
+   height: 10px;
+   border: 1px solid #000;
+   border-radius: 40%;
+   border-right: none;
+   border-bottom-left-radius: 20%;
+   border-bottom-right-radius: 20%;
+   margin-top: 30px;
+   margin-left: -6.5px;
+}
+
+.paw1,
+.paw3{
+   border-bottom-left-radius: 40%;
+   border-bottom-right-radius: 40%;
+}
+
+.tail1{
+   position: absolute;
+   z-index: 0;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #000;
+   border-radius: 40%;
+   margin-top: -58px;
+   right: 40px;
+}
+
+.tail2{
+   position: absolute;
+   z-index: 1;
+   width: 10px;
+   height: 20px;
+   border-right: 1px solid #000;
+   border-radius: 40%;
+   margin-top: -58px;
+   right: 50px;
+   background: rgb(252, 160, 55);
+}
+
+@media screen and (max-width: 1260px){
+
+   body{
+      background: rgb(255, 112, 191);
+   }
+
+   .tail2{
+      background: rgb(255, 112, 191);
+   }
+   
+}
+
+@media screen and (max-width: 1120px){
+
+   body{
+      background: rgb(122, 80, 177);
+   }
+
+   .tail2{
+      background: rgb(122, 80, 177);
+   }
+   
+}
+
+@media screen and (max-width: 950px){
+
+   body{
+      background: rgb(132, 110, 255);
+   }
+
+   .tail2{
+      background: rgb(132, 110, 255);
+   }
+   
+}
+
+@media screen and (max-width: 800px){
+
+   body{
+      background: rgb(114, 211, 250);
+   }
+
+   .tail2{
+      background: rgb(114, 211, 250);
+   }
+   
+}
+
+@media screen and (max-width: 600px){
+
+   body{
+      background: rgb(55, 252, 193);
+   }
+
+   .tail2{
+      background: rgb(55, 252, 193);
+   }
+   
+}
+
+@media screen and (max-width: 510px){
+
+   body{
+      background: rgb(253, 255, 119);
+   }
+
+   .tail2{
+      background: rgb(253, 255, 119);
+   }
+   
+}
+
+@media screen and (max-width: 450px){
+
+   body{
+      background: rgb(236, 183, 83);
+   }
+
+   .tail2{
+      background: rgb(236, 183, 83);
+   }
+   
+}
+
+@media screen and (max-width: 400px){
+
+   body{
+      background: rgb(248, 103, 103);
+   }
+
+   .tail2{
+      background: rgb(248, 103, 103);
+   }
+   
+}
