@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Neonderthaw&display=swap');
+
+:root{
+   --bg: rgb(207, 138, 207);
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner{
+   max-width: 1400px;
+   margin: 10px auto;
+}
+
+.col{
+   position: relative;
+   height: 600px;
+}
+
+.card-img-top{
+   border-top-left-radius: calc(1rem-1px);
+   border-top-right-radius: calc(1rem-1px);
+   padding: 5px;
+   object-fit: contain;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   height: 335px;
+   width: auto;
+}
+
+.card-body{
+   z-index: 2;
+   margin-top: 335px;
+}
+
+.label-top{
+   z-index: 3;
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   padding: 5px 10px;
+   background: var(--bg);
+   text-transform: uppercase;
+   border-radius: 3px;
+   font-size: 0.7rem;
+   font-weight: bold;
+}
+
+.reviews{
+   text-decoration: none;
+}
+
+.card-title{
+   height: 100px;
+   overflow: hidden;
+}
+
+.card-title a{
+   text-decoration: none;
+}
+
+.icon2{
+   color: rgb(241, 132, 178);
+}
+
+.icon2:hover{
+   color: grey;
+}
+
+.icon1:hover{
+   color: rgb(241, 132, 132);
+}
+
+a{
+   color: grey;
+}
+
+.info:hover{
+   color: var(--bg);
+}
+
+.red{
+   color: rgb(241, 132, 132);
+}
+
+h1{
+   text-align: center;
+   margin: 10px;
+   font-family: 'Neonderthaw', cursive;
+}
