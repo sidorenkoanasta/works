@@ -21,7 +21,7 @@ body{
 
 .col{
    position: relative;
-   height: 600px;
+   height: 550px;
 }
 
 .card-img-top{
@@ -33,13 +33,13 @@ body{
    top: 0;
    left: 0;
    z-index: 1;
-   height: 335px;
-   width: auto;
+   height: 230px;
+   width: 100%;
 }
 
 .card-body{
    z-index: 2;
-   margin-top: 335px;
+   margin-top: 230px;
 }
 
 .label-top{
@@ -60,7 +60,7 @@ body{
 }
 
 .card-title{
-   height: 100px;
+   height: 150px;
    overflow: hidden;
 }
 
