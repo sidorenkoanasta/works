@@ -22,7 +22,7 @@
 
 #child2{
    grid-area: 1 / 6 / 2 / 13;
-   background: url(https://telegraf.com.ua/static/storage/thumbs/428x240/3/9f/84ede685-3d094622a51cc81f71536e2296e6d9f3.jpg?v=8552_1) no-repeat center center;
+   background: url(https://telegraf.com.ua/static/storage/thumbs/428x240/3/9f/84ede685-3d094622a51cc81f71536e2296e6d9f3.jpg) no-repeat center center;
    background-size: cover;
 }
 
@@ -46,7 +46,7 @@
 
 #child6{
    grid-column: 1 / 3;
-   background: url(https://fatalerror606.files.wordpress.com/2018/10/n9dehkarvbc1.jpg?w=640) no-repeat center center;
+   background: url(https://fatalerror606.files.wordpress.com/2018/10/n9dehkarvbc1.jpg) no-repeat center center;
    background-size: cover;
 }
 
