@@ -1,0 +1,225 @@
+/*підключення шрифтів*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300&display=swap');
+
+/*загальні стилі, обнулення*/
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+   --text1: rgb(37, 37, 37);
+   --text2: rgb(100, 100, 100);
+}
+
+body{
+   color: var(--text1);
+   font-family: 'Roboto', sans-serif;
+   font-size: 24px;
+   line-height: 30px;
+}
+
+.conteiner{
+   width: 940px;
+   margin: 0 auto;
+}
+
+/*стилі для меню*/
+.menu{
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   margin: 50px 0;
+   font-size: 24px;
+}
+
+.menu a{
+   text-decoration: none;
+   color: var(--text2);
+}
+
+.home a{
+   color: var(--text1);
+}
+
+/*особливі шрифти*/
+h1, 
+h2, 
+.menu, 
+.language{
+   font-family: 'Righteous', cursive;
+}
+
+/*відступи від горизонтальної лінії*/
+.header hr{
+   margin: 50px 0;
+}
+
+/*стилі для хедера*/
+.header{
+   margin: 50px 0 45px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+h1{
+   font-size: 48px;
+   width: 242px;
+   line-height: 56px;
+}
+
+.header p{
+   width: 154px;
+   margin-right: -65px;
+}
+
+.language{
+   text-transform: uppercase;
+   font-size: 18px;
+   transform: rotate(-90deg);
+   width: 81px;
+   margin-top: -80px;
+   color: var(--text2);
+}
+
+.language > .eng,
+.language > .line{
+   color: var(--text1);
+}
+
+/*картинка та її налаштування*/
+.img{
+   height: 435px;
+   background-image: url("../img/img-desktop.jpg");
+   margin-bottom: 100px;
+}
+
+/*другий екран*/
+#screen2{
+   background-color: rgb(240, 240, 240);
+   padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+#screen2 p{
+   margin-top: 50px;
+   width: 550px;
+}
+
+/*основні налаштування третього екрану*/
+#screen3{
+   text-align: center;
+   padding: 100px 0;
+}
+
+#screen3 .main{
+   margin: 50px 0;
+}
+
+/*картки із навичками*/
+.skills{
+   display: flex;
+   justify-content: space-between;
+}
+
+.skills p{
+   font-size: 18px;
+   width: 123px;
+   margin: 5px 0;
+}
+
+.skill-body{
+   height: 253px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*четвертий екран*/
+#screen4{
+   padding: 50px 0 56.5px 0;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+#screen4 p{
+   margin: 50px 0;
+   width: 376px;
+}
+
+/*стилі для кнопки*/
+.btn{
+   width: 406px;
+   height: 85px;
+   background-color: var(--text1);
+   margin: 50px 0 15px 0;
+   font-weight: bolder;
+   line-height: 85px;
+}
+
+.btn a{
+   color: #fff;
+   text-decoration: none;
+}
+
+/*налаштування іконок-посилань на соц-мережі*/
+.icons{
+   width: 393px;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+
+/*взаємодія із користувачем*/
+
+/*з меню*/
+.menu a:hover{
+   color: var(--text1);
+}
+
+.menu .home a:hover{
+   color: var(--text2);
+}
+
+/*з перемикачем мови*/
+.language:hover{
+   color: var(--text1);
+}
+
+.language > .eng:hover{
+   color: var(--text2);
+}
+
+/*з картинкою*/
+.img:hover{
+   transform: 0.2s ease;
+   animation: animate_grow 2s linear 1;
+}
+
+@keyframes animate_grow{
+   0%{
+      transform: scale(1);
+   }
+
+   50%{
+      transform: scale(1.01);
+   }
+
+   100%{
+      transform: scale(1);
+   }
+}
+
+.btn:hover{
+   box-shadow: 0 0 10px 1px var(--text2);
+   font-size: 28px;
+}
